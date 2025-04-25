@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Study Mate</title>
+</head>
+<body>
+  <div id="auth">
+    <input id="email" type="email" placeholder="Email">
+    <input id="password" type="password" placeholder="Password">
+    <button onclick="signUp()">Sign Up</button>
+    <button onclick="logIn()">Log In</button>
+  </div>
+
+  <div id="dashboard" style="display:none;">
+    <p>Logged in as: <span id="user-email"></span></p>
+    <select id="subject">
+      <option value="Math">Math</option>
+      <option value="Science">Science</option>
+    </select>
+    <input id="topic" placeholder="Topic">
+    <button onclick="goOnline()">Go Online</button>
+    <div id="match-result"></div>
+  </div>
+
+  <script type="module" src="./script.js"></script>
+</body>
+</html>
